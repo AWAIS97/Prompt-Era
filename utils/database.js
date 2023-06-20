@@ -11,7 +11,7 @@ export const connectToDataBase = async () => {
   }
 
   try {
-    await mongoose.connect(process.env.MONGODB_URI, {
+    await mongoose.connect(process.env.MONOGO_DB_URI, {
       dbName: "prompt-era",
       useNewUrlParser: true,
       useUnifiedTopology: true,
